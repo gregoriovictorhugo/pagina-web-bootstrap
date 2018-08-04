@@ -1,0 +1,62 @@
+.img-round {
+  /* efeito circular na imagem */
+  border-radius: 5%;
+  /* tamanho da imagem */
+  width: 20%;
+}
+header {
+  /* aplica em todo header da pagina as características do CSS descrito abaixo sem precisar atribuir no .html */
+  position: relative;
+  width 100%;
+  min-height: auto;
+  /* ajuste para ampliar o plano de fundo em toda a pagina do header */
+  -webkit-background: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  /* alinhar texto*/
+  text-align: center;
+  /* definir cor do mesmo */
+  color: white;
+  background-image: url("../img/fundo.jpg");
+}
+/* forma de atribuir características que so funcionam quando aplicado a classe: PRECISA ATRIBUIR*/
+header .conteudo {
+  position: relative;
+  padding: 100px 15px 100px; /*100 topo, 15 lateral 100 base*/
+  /* width: 100%; */
+}
+/* colocar o tamanho do html e body no tmanho total permitido: abaixo */
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+@@media (min-width: 768px;) { /*definição de condição para tela de celular*/
+  header{
+    min-height: 100%;
+    text-align: center;
+  }
+
+  header .conteudo{
+    position: absolute; /*estabelece posição absoluta*/
+    top: 50%; /*margem para cima*/
+    -webkit-transform: translateY(-50%); /*reposicionando todo o conteúdo para o centro da página*/
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /*--------------------------------------------------------------------------------------*/
+    text-align: center;
+  }
+
+  header .conteudp .item{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+.text-center{
+  text-align: center;
+}

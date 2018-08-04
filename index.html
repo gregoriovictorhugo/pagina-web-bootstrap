@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<!-- dir: informa o método de leitura (left to right) -->
+<!-- Lang: Apoio ao navegador -->
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="widht=device-widht, initial-scale=1"> <!--Para ajustar a imagem de acordo com o tamanho da tela: configuração para barra de ferramentas)-->
+   <meta name="author" content="Victor de Almeida Fortes Gregorio ">
+   <meta name="description" content= "Este site foi desenvolvido em 2018 por Victor Hugo de Almeida Fortes Gregorio ">
+   <title>Victor Gregorio</title>
+   <!-- O site da adobe (color adobe cc) apresenta as paletas de cores com uma imagem a ser uilizada -->
+   <!-- Colocar o meu arquivo CSS -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- flask é um framework para desenvolvimento web phyton -->
+   <!-- Colocar arquivo CSS do Bootstrap -->
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ </head>
+
+ <body>
+   <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+   <!-- adcionar uma barra de pesquisa tendo demonstrações, fonte:http://getbootstrap.com/docs/3.3/components/#navbar ATENÇÃO AO TODA NAV E DIV-->
+      <nav class="navbar navbar-default navbar-fixed-top"> <!-- navbar-fixed-top serve para ajustar a barra de erramentas para tudo estar na mesma linha-->
+          <div class="container-fluid"> <!--container fluid utiliza todo o espaço disponível na página -->
+           <!-- Brand and toggle get grouped for better mobile display -->
+           <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+             <a class="navbar-brand" href="#">Victor Gregorio</a> <!--href="#" redireciona para minha pagina-->
+           </div>
+
+           <!-- Collect the nav links, forms, and other content for toggling -->
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <ul class="nav navbar-nav navbar-right">
+               <li><a href="#slides">slides</a></li>
+               <li><a href="#videos">videos</a></li>
+               <li><a href="#contato">contato</a></li>
+             </ul>
+           </div><!-- /.navbar-collapse --><!--collapsed realiza a compressão dos itens em menu-->
+         </div><!-- /.container-fluid -->
+       </nav>
+  <header>
+   <!-- Div para agrupar as informações do header -->
+   <!-- header-content nesta posição para fazer o espaçamento total da imagem -->
+    <div class="conteudo">
+     <!-- Criação de 2 Divs: 1 para a imagem e 1 para os textos -->
+      <div class="item">
+        <img class="img-round" src="img/dd.jpg" alt="Foto de perfil">
+      </div>
+      <div class="item">
+        <h1>Victor Gregorio</h1>
+        <h3>Graduando em engnharia química</h3>
+      </div>
+
+    </div>
+  </header>
+  <section id="contato">
+    <div class="container">
+      <h1 class="text-center">contato</h1>
+    </div>
+
+  </section>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins, utilizado nesta ordem) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript utilizado nesta ordem-->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ </body>
+</html>
