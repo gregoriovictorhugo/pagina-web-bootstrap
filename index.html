@@ -18,7 +18,6 @@
  </head>
 
  <body>
-   <!-- -------------------------------------------------------------------------------------------------------------------------- -->
    <!-- adcionar uma barra de pesquisa tendo demonstrações, fonte:http://getbootstrap.com/docs/3.3/components/#navbar ATENÇÃO AO TODA NAV E DIV-->
       <nav class="navbar navbar-default navbar-fixed-top"> <!-- navbar-fixed-top serve para ajustar a barra de erramentas para tudo estar na mesma linha-->
           <div class="container-fluid"> <!--container fluid utiliza todo o espaço disponível na página -->
@@ -36,7 +35,7 @@
            <!-- Collect the nav links, forms, and other content for toggling -->
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
              <ul class="nav navbar-nav navbar-right">
-               <li><a href="#slides">slides</a></li>
+               <li><a href="#slides">slides</a></li> <!-- <a></a> nada mais é que uma ancora ao lincar o nome-->
                <li><a href="#videos">videos</a></li>
                <li><a href="#contato">contato</a></li>
              </ul>
@@ -53,7 +52,7 @@
       </div>
       <div class="item">
         <h1>Victor Gregorio</h1>
-        <h3>Graduando em engnharia química</h3>
+        <h3>Graduando em engenharia química</h3>
       </div>
 
     </div>
@@ -61,6 +60,25 @@
   <section id="contato">
     <div class="container">
       <h1 class="text-center">contato</h1>
+    <form class="text-center" action="index.html" method="post">
+      <!-- method post apresenta o conteudo dos inputs na url -->
+      <!-- o action=index.html identifica a fonte do dado -->
+      <p>
+        <!-- <label for="txt-nome">Nome:</label> <!-- O for relaciona o nome a barra de escrita-->
+        <input class="form-control" type="text" id="txt-nome" placeholder="Nome">
+      </p>
+      <p>
+        <!-- <label for="txt-email">Email:</label> -->
+        <input class="form-control" type"email" id="txt-email" placeholder="E-mail">
+      </p>
+      <p>
+        <!-- <label for="txt-mensagem">Mensagem</label> -->
+        <textarea class="form-control" id="txt-mensagem" placeholder="Mensagem"></textarea>
+      </p>
+      <p>
+        <input class="btn btn-primary form-control" type="submit" name="submit" id="submit" value="Enviar">
+      </p>
+    </form>
     </div>
 
   </section>
